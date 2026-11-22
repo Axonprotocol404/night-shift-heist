@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VANILLA HEIST — stealth canvas game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game" width="960" height="640"></canvas>
+    <div id="hud">
+      <div id="alarm-wrap">
+        <span class="hud-label">ALARM</span>
+        <div id="alarm-bar"><div id="alarm-fill"></div></div>
+      </div>
+      <div id="loot-wrap"><span class="hud-label">LOOT</span><span id="loot-count">0/4</span></div>
+      <div id="timer-wrap"><span class="hud-label">TIME</span><span id="timer">2:00</span></div>
+      <div id="hint-wrap"><span id="hint">SPACE start &middot; WASD/arrows move</span></div>
+    </div>
+    <div id="overlay">
+      <h1>VANILLA HEIST</h1>
+      <p id="overlay-sub">Steal 4 bags of gold. Dodge the guards' vision cones<br>and the sweeping cameras. Reach the green EXIT.</p>
+      <p id="overlay-action">Press SPACE to start</p>
+    </div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
